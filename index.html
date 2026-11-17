@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legacy Barbershop — Afro & Fade Specialists | Brooklands, Milton Keynes</title>
+<meta name="description" content="Legacy Barbershop, Brooklands, Milton Keynes. Afro & fade specialists. Walk-ins always welcome — or reserve your chair online. Skin fades, traditional wet shaves, every hair type. Open 7 days.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#111110;--paper:#faf7f0;--cream:#efe8d8;--line:#d9d2c0;--white:#fff}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+h1,h2,h3,.display{font-family:"Arial Narrow","Helvetica Neue Condensed",system-ui,sans-serif;font-stretch:condensed;text-transform:uppercase;letter-spacing:.5px;line-height:1.02}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo-banner{background:var(--ink);color:var(--paper);text-align:center;padding:9px 16px;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.demo-banner span{color:var(--cream);opacity:.75;font-weight:400;letter-spacing:1px}
+header{background:var(--paper);border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:50}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;flex-wrap:wrap}
+.brand{font-size:30px;font-weight:900;text-transform:uppercase;letter-spacing:1px;line-height:1;text-decoration:none}
+.brand small{display:block;font-size:11px;font-weight:700;letter-spacing:3.5px;color:#55534a}
+nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:1px}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;padding:13px 24px;border:3px solid var(--ink);font-size:15px;cursor:pointer}
+.btn:hover{background:var(--paper);color:var(--ink)}
+.btn.light{background:var(--paper);color:var(--ink)}
+.btn.light:hover{background:var(--ink);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.hero{background:var(--ink);color:var(--paper);padding:64px 0 56px;border-bottom:6px solid var(--ink)}
+.hero .kicker{font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:13px;color:var(--cream);opacity:.85}
+.hero h1{font-size:clamp(52px,11vw,110px);font-weight:900;margin:12px 0 6px}
+.hero h1 .outline{color:transparent;-webkit-text-stroke:2px var(--paper)}
+.hero p.lead{font-size:19px;max-width:620px;color:#e8e2d2}
+.hero .stars{margin:18px 0 4px;font-size:17px;font-weight:700;letter-spacing:1px}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.pole{height:14px;background:repeating-linear-gradient(45deg,var(--ink) 0 18px,var(--paper) 18px 36px,var(--cream) 36px 54px,var(--paper) 54px 72px);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.walkin{background:var(--cream);border-bottom:3px solid var(--ink);padding:18px 0}
+.walkin .wrap{display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.walkin strong{text-transform:uppercase;letter-spacing:1px;font-size:17px}
+section{padding:56px 0}
+.sec-head{display:flex;align-items:baseline;gap:16px;border-bottom:3px solid var(--ink);padding-bottom:10px;margin-bottom:28px;flex-wrap:wrap}
+.sec-head .no{font-weight:900;font-size:15px;letter-spacing:2px}
+.sec-head h2{font-size:clamp(30px,6vw,46px);font-weight:900}
+.sec-head p{margin-left:auto;font-size:14px;color:#55534a;max-width:340px}
+.svc-group{margin-bottom:30px}
+.svc-group h3{font-size:20px;font-weight:900;letter-spacing:2px;margin-bottom:10px}
+.svc{display:flex;align-items:center;gap:12px;padding:13px 4px;border-bottom:1px solid var(--line)}
+.svc .name{font-weight:700;font-size:17px}
+.svc .dots{flex:1;border-bottom:2px dotted #b9b09a;transform:translateY(-4px)}
+.svc .price{font-weight:900;font-size:18px;white-space:nowrap}
+.svc .price.free{letter-spacing:2px}
+.svc button{border:2px solid var(--ink);background:var(--paper);font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:12px;padding:7px 13px;cursor:pointer;white-space:nowrap}
+.svc button:hover{background:var(--ink);color:var(--paper)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.step{border:3px solid var(--ink);padding:22px;background:var(--white)}
+.step .n{font-size:40px;font-weight:900;line-height:1}
+.step h3{font-size:19px;font-weight:900;margin:8px 0 6px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.review{border:3px solid var(--ink);background:var(--white);padding:22px}
+.review .st{font-size:18px;letter-spacing:3px}
+.review p{margin:10px 0;font-size:16px}
+.review .who{font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:1px;color:#55534a}
+.bookbox{border:4px solid var(--ink);background:var(--white)}
+.book-head{background:var(--ink);color:var(--paper);padding:18px 24px}
+.book-head h2{font-size:clamp(26px,5vw,38px);font-weight:900}
+.book-head p{color:#e8e2d2;font-size:15px}
+.book-body{padding:24px}
+.bstep{margin-bottom:26px}
+.bstep h3{font-size:18px;font-weight:900;letter-spacing:1.5px;margin-bottom:12px}
+.bstep h3 span{background:var(--ink);color:var(--paper);padding:2px 9px;margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{border:2px solid var(--ink);background:var(--paper);padding:9px 14px;font-weight:700;font-size:14px;cursor:pointer}
+.chip small{font-weight:400;color:#55534a}
+.chip.sel{background:var(--ink);color:var(--paper)}
+.chip.sel small{color:var(--cream)}
+.chip:disabled{opacity:.32;cursor:not-allowed}
+input[type="date"],input[type="text"],input[type="tel"]{width:100%;padding:13px;border:2px solid var(--ink);font-size:16px;background:var(--paper);font-family:inherit}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:1.5px;margin-bottom:6px}
+.err{display:none;background:#111110;color:var(--paper);padding:11px 15px;font-weight:700;margin-bottom:16px;font-size:14px}
+.confirm{display:none;border:3px solid var(--ink);background:var(--cream);padding:24px}
+.confirm h3{font-size:26px;font-weight:900;margin-bottom:10px}
+.confirm table{width:100%;border-collapse:collapse;margin:12px 0}
+.confirm td{padding:7px 4px;border-bottom:1px solid var(--line);font-size:16px}
+.confirm td:first-child{font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:1.5px;width:110px;color:#55534a}
+.note{font-size:13.5px;color:#55534a}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.vcard{border:3px solid var(--ink);background:var(--white);padding:22px}
+.vcard h3{font-size:18px;font-weight:900;letter-spacing:1.5px;margin-bottom:10px}
+.vcard p,.vcard li{font-size:16px}
+.vcard ul{list-style:none}
+.vcard li{padding:3px 0;border-bottom:1px solid var(--line)}
+.vcard li:last-child{border-bottom:none}
+.vcard li span{float:right;font-weight:700}
+footer{background:var(--ink);color:var(--paper);padding:44px 0 30px}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+footer h3{font-size:17px;font-weight:900;letter-spacing:2px;margin-bottom:10px;color:var(--paper)}
+footer p,footer li{color:#d8d2c0;font-size:15px}
+footer ul{list-style:none}
+footer li{padding:2px 0}
+footer a{color:var(--paper)}
+.foot-brand{font-size:34px;font-weight:900;text-transform:uppercase;line-height:1}
+.foot-bottom{border-top:1px solid #3a382f;margin-top:30px;padding-top:16px;font-size:13px;color:#a49d88;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:560px){nav a:not(.btn){display:none}.svc .name{font-size:15.5px}}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Concept Demo <span>— prepared for Legacy Barbershop · not the live website</span></div>
+
+<header>
+  <div class="wrap header-in">
+    <a class="brand" href="#top">Legacy<small>Barbershop · Milton Keynes</small></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="#book" style="padding:10px 18px">Book a Chair</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">Afro &amp; Fade Specialists · Brooklands · Est. Milton Keynes</div>
+    <h1>Walk in.<br><span class="outline">Leave sharper.</span></h1>
+    <p class="lead">Sharp cuts, traditional wet shaves, every hair type. Open 7 days in Brooklands, Milton Keynes.</p>
+    <div class="stars">★★★★★ 5.0 on Google · 171 reviews</div>
+    <div class="cta-row">
+      <a class="btn light" href="#book">Book a Chair</a>
+      <a class="btn" href="#services" style="background:transparent;color:var(--paper);border-color:var(--paper)">See Services &amp; Prices</a>
+    </div>
+  </div>
+</div>
+<div class="pole" aria-hidden="true"></div>
+
+<div class="walkin">
+  <div class="wrap">
+    <strong>Walk-ins always welcome — no appointment needed</strong>
+    <span>Prefer a guaranteed slot? <a href="#book"><b>Reserve your chair online</b></a> and skip the wait.</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">/ 01</span><h2>Services &amp; Prices</h2><p>The full price list, laid out. Tap “Book” on any service to reserve your chair.</p></div>
+    <div id="svc-list"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">/ 02</span><h2>How Booking Works</h2><p>Walk-ins stay exactly as they are. Booking is for anyone who wants their chair guaranteed.</p></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Pick your service</h3><p>Choose from the full menu — fades, scissor cuts, beard work, packages.</p></div>
+      <div class="step"><div class="n">2</div><h3>Pick your time</h3><p>Choose a day and a time that suits you. First available barber, every time.</p></div>
+      <div class="step"><div class="n">3</div><h3>Skip the wait</h3><p>Your chair is held for you. Arrive at your time, sit down, leave sharper.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" style="padding-top:0">
+  <div class="wrap">
+    <div class="bookbox">
+      <div class="book-head">
+        <h2>Book a Chair</h2>
+        <p>Reserve your slot in under a minute. Walk-ins are still always welcome if you’d rather just turn up.</p>
+      </div>
+      <div class="book-body">
+        <div class="err" id="bk-err"></div>
+
+        <div id="bk-form">
+          <div class="bstep">
+            <h3><span>1</span>Choose a service</h3>
+            <div class="chips" id="bk-services"></div>
+          </div>
+          <div class="bstep">
+            <h3><span>2</span>Choose a date</h3>
+            <input type="date" id="bk-date">
+            <p class="note" id="bk-hours-note" style="margin-top:8px"></p>
+          </div>
+          <div class="bstep">
+            <h3><span>3</span>Choose a time</h3>
+            <div class="chips" id="bk-times"><span class="note">Pick a date first — times will appear here.</span></div>
+            <p class="note" style="margin-top:8px">Barber: <b>First available</b> — you’ll be with the next free barber when you arrive.</p>
+          </div>
+          <div class="bstep">
+            <h3><span>4</span>Your details</h3>
+            <div class="field"><label for="bk-name">Your name</label><input type="text" id="bk-name" placeholder="e.g. James Smith" autocomplete="name"></div>
+            <div class="field"><label for="bk-phone">Mobile number</label><input type="tel" id="bk-phone" placeholder="e.g. 07123 456789" autocomplete="tel"></div>
+          </div>
+          <button class="btn" id="bk-confirm" style="width:100%;font-size:17px;padding:16px">Confirm Booking</button>
+          <p class="note" style="margin-top:10px;text-align:center">No payment taken now — pay at the shop. Cash &amp; cards accepted (no Amex).</p>
+        </div>
+
+        <div class="confirm" id="bk-done">
+          <h3>Chair Reserved ✓</h3>
+          <p>Thanks — your slot is held. Show this screen when you arrive, or just give your name at the counter.</p>
+          <table>
+            <tr><td>Service</td><td id="cf-service"></td></tr>
+            <tr><td>Date</td><td id="cf-date"></td></tr>
+            <tr><td>Time</td><td id="cf-time"></td></tr>
+            <tr><td>Barber</td><td>First available</td></tr>
+            <tr><td>Name</td><td id="cf-name"></td></tr>
+            <tr><td>Phone</td><td id="cf-phone"></td></tr>
+          </table>
+          <p class="note">In the live version you’d also get a text confirmation and a reminder before your appointment. On this concept demo, your booking is saved on this device only.</p>
+          <button class="btn ghost" id="bk-again" style="margin-top:14px">Make another booking</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">/ 03</span><h2>Word of Mouth</h2><p>★★★★★ 5.0 on Google · 171 reviews</p></div>
+    <div class="reviews">
+      <div class="review"><div class="st">★★★★★</div><p>“Best barbershop I’ve been to in MK by a mile. The barbers take their time, ask what you actually want, and the fade is always immaculate. Won’t go anywhere else now.”</p><div class="who">James M. · Google</div></div>
+      <div class="review"><div class="st">★★★★★</div><p>“Took my son in for his first proper cut — patient, friendly, and the cut was sharp. Both regulars now. Top barbers, top blokes.”</p><div class="who">Sam T. · Google</div></div>
+      <div class="review"><div class="st">★★★★★</div><p>“Genuinely the best fade I’ve had in years. Properly skilled — and sound blokes too. Walk-ins make life easy. Don’t sleep on this place.”</p><div class="who">Marcus R. · Google</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">/ 04</span><h2>Visit the Shop</h2></div>
+    <div class="visit">
+      <div class="vcard"><h3>Find Us</h3><p>Legacy Barbershop<br>42a Montague Crescent<br>Brooklands, Milton Keynes<br>MK10 7LN</p><p style="margin-top:10px">Free parking out front · step-free wheelchair access</p></div>
+      <div class="vcard"><h3>Opening Hours</h3><ul>
+        <li>Monday <span>9:00 AM – 7:00 PM</span></li>
+        <li>Tuesday <span>9:00 AM – 7:00 PM</span></li>
+        <li>Wednesday <span>9:00 AM – 7:00 PM</span></li>
+        <li>Thursday <span>9:00 AM – 7:00 PM</span></li>
+        <li>Friday <span>9:00 AM – 7:00 PM</span></li>
+        <li>Saturday <span>9:00 AM – 7:00 PM</span></li>
+        <li>Sunday <span>9:00 AM – 4:00 PM</span></li>
+      </ul><p style="margin-top:10px">Open 7 days · walk-ins welcome</p></div>
+      <div class="vcard"><h3>Contact</h3><p>Phone / WhatsApp<br><a href="tel:+447455031199"><b>07455 031199</b></a></p><p style="margin-top:10px">Instagram<br><a href="https://www.instagram.com/legacybarbershopmk" target="_blank" rel="noopener"><b>@legacybarbershopmk</b></a></p><p style="margin-top:10px">Cash &amp; cards accepted (no Amex)</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="pole" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="foot-brand">Legacy</div><p style="margin-top:8px">Barbershop · Afro &amp; fade specialists<br>Brooklands, Milton Keynes</p><p style="margin-top:8px">★★★★★ 5.0 · 171 Google reviews</p></div>
+      <div><h3>Visit</h3><p>42a Montague Crescent<br>Brooklands, Milton Keynes<br>MK10 7LN</p><p style="margin-top:8px">Free parking · step-free access</p></div>
+      <div><h3>Hours</h3><ul><li>Mon – Sat · 9:00 AM – 7:00 PM</li><li>Sunday · 9:00 AM – 4:00 PM</li><li>Open 7 days</li><li>Walk-ins always welcome</li></ul></div>
+      <div><h3>Contact</h3><ul><li><a href="tel:+447455031199">07455 031199</a></li><li><a href="https://www.instagram.com/legacybarbershopmk" target="_blank" rel="noopener">@legacybarbershopmk</a></li><li>Cash &amp; cards (no Amex)</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>Legacy Barbershop — Walk in. Leave sharper.</span><span>Concept demo — prepared to show online booking alongside walk-ins.</span></div>
+  </div>
+</footer>
+
+<script>
+var SERVICES = [
+  {group:"Cuts", items:[
+    ["Skin Fade",20],["Taper Fade",18],["Haircut",17],["Traditional Scissor Cut",19],
+    ["Restyle (from)",20],["One Grade All Over",14],["Kids Haircut (Under 13)",15],["O.A.P Haircut",15]
+  ]},
+  {group:"Beard & Shave", items:[
+    ["Hot Towel Only",5],["Essential Line-Up",6],["Beard Trim & Fade",8],["Deluxe Traditional Shave & Fade",13]
+  ]},
+  {group:"Extras", items:[
+    ["Nose Wax",5],["Ear Wax",5],["Traditional Ear Flaming",0]
+  ]},
+  {group:"Packages", items:[
+    ["The Full Finish",13],["The Ultimate Package",40]
+  ]}
+];
+function priceLabel(p){ return p===0 ? "FREE" : "£"+p; }
+
+// Render the public price list
+var listEl = document.getElementById('svc-list');
+SERVICES.forEach(function(g){
+  var html = '<div class="svc-group"><h3>'+g.group+'</h3>';
+  g.items.forEach(function(it){
+    html += '<div class="svc"><span class="name">'+it[0]+'</span><span class="dots"></span>'+
+      '<span class="price'+(it[1]===0?' free':'')+'">'+priceLabel(it[1])+'</span>'+
+      '<button type="button" data-book="'+it[0]+'">Book</button></div>';
+  });
+  html += '</div>';
+  listEl.insertAdjacentHTML('beforeend', html);
+});
+listEl.addEventListener('click', function(e){
+  if(e.target && e.target.dataset && e.target.dataset.book){
+    selectService(e.target.dataset.book);
+    document.getElementById('book').scrollIntoView({behavior:'smooth'});
+  }
+});
+
+// Booking flow
+var sel = {service:null, price:null, date:null, time:null};
+var svcChips = document.getElementById('bk-services');
+SERVICES.forEach(function(g){
+  g.items.forEach(function(it){
+    var b = document.createElement('button');
+    b.type='button'; b.className='chip'; b.dataset.name=it[0]; b.dataset.price=it[1];
+    b.innerHTML = it[0]+' <small>'+priceLabel(it[1])+'</small>';
+    b.addEventListener('click', function(){ selectService(it[0]); });
+    svcChips.appendChild(b);
+  });
+});
+function selectService(name){
+  svcChips.querySelectorAll('.chip').forEach(function(c){
+    var on = c.dataset.name===name;
+    c.classList.toggle('sel', on);
+    if(on){ sel.service=name; sel.price=c.dataset.price; }
+  });
+}
+
+var dateInput = document.getElementById('bk-date');
+var timesEl = document.getElementById('bk-times');
+var hoursNote = document.getElementById('bk-hours-note');
+var today = new Date(); today.setHours(0,0,0,0);
+function iso(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+dateInput.min = iso(today);
+var maxD = new Date(today); maxD.setDate(maxD.getDate()+21);
+dateInput.max = iso(maxD);
+
+function slotsFor(d){
+  var day = d.getDay(); // 0 = Sunday
+  var close = (day===0) ? 16 : 19; // shop closes 4pm Sun, 7pm Mon-Sat
+  var out = [];
+  for(var h=9; h<close; h++){
+    out.push(h+':00');
+    if(!(h===close-1)) out.push(h+':30'); else out.push(h+':30');
+  }
+  // last bookable slot is 30 min before close
+  out = out.filter(function(t){
+    var parts=t.split(':'); var mins=(+parts[0])*60+(+parts[1]);
+    return mins <= close*60-30;
+  });
+  return out;
+}
+dateInput.addEventListener('change', function(){
+  sel.time = null;
+  if(!dateInput.value){ timesEl.innerHTML='<span class="note">Pick a date first — times will appear here.</span>'; hoursNote.textContent=''; return; }
+  var d = new Date(dateInput.value+'T12:00:00');
+  sel.date = dateInput.value;
+  var dayName = d.toLocaleDateString('en-GB',{weekday:'long'});
+  hoursNote.textContent = dayName+' hours: '+(d.getDay()===0 ? '9:00 AM – 4:00 PM' : '9:00 AM – 7:00 PM');
+  var slots = slotsFor(d);
+  var isToday = iso(d)===iso(new Date());
+  var now = new Date();
+  timesEl.innerHTML='';
+  slots.forEach(function(t){
+    var parts=t.split(':'); var hh=+parts[0], mm=+parts[1];
+    var b=document.createElement('button');
+    b.type='button'; b.className='chip'; b.textContent=fmtTime(hh,mm);
+    if(isToday){
+      var slotDate=new Date(); slotDate.setHours(hh,mm,0,0);
+      if(slotDate<=now){ b.disabled=true; }
+    }
+    b.addEventListener('click', function(){
+      timesEl.querySelectorAll('.chip').forEach(function(c){c.classList.remove('sel')});
+      b.classList.add('sel'); sel.time=t;
+    });
+    timesEl.appendChild(b);
+  });
+  if(!timesEl.children.length){ timesEl.innerHTML='<span class="note">No times left on this date — please pick another day.</span>'; }
+});
+function fmtTime(h,m){
+  var ap = h>=12 ? 'PM':'AM'; var hh = h%12; if(hh===0) hh=12;
+  return hh+':'+String(m).padStart(2,'0')+' '+ap;
+}
+
+var errEl = document.getElementById('bk-err');
+function showErr(msg){ errEl.textContent=msg; errEl.style.display='block'; errEl.scrollIntoView({behavior:'smooth',block:'center'}); }
+document.getElementById('bk-confirm').addEventListener('click', function(){
+  errEl.style.display='none';
+  var name = document.getElementById('bk-name').value.trim();
+  var phone = document.getElementById('bk-phone').value.trim();
+  if(!sel.service) return showErr('Please choose a service first (step 1).');
+  if(!sel.date) return showErr('Please choose a date (step 2).');
+  if(!sel.time) return showErr('Please choose a time (step 3).');
+  if(name.length<2) return showErr('Please enter your name (step 4).');
+  if(phone.replace(/\D/g,'').length<7) return showErr('Please enter a valid phone number (step 4).');
+  var booking = {service:sel.service, price:+sel.price, date:sel.date, time:sel.time, name:name, phone:phone, savedAt:new Date().toISOString()};
+  try{
+    var all = JSON.parse(localStorage.getItem('legacy-demo-bookings')||'[]');
+    all.push(booking); localStorage.setItem('legacy-demo-bookings', JSON.stringify(all));
+  }catch(e){}
+  var d = new Date(sel.date+'T12:00:00');
+  document.getElementById('cf-service').textContent = sel.service+' — '+priceLabel(+sel.price);
+  document.getElementById('cf-date').textContent = d.toLocaleDateString('en-GB',{weekday:'long', day:'numeric', month:'long', year:'numeric'});
+  var tp = sel.time.split(':');
+  document.getElementById('cf-time').textContent = fmtTime(+tp[0], +tp[1]);
+  document.getElementById('cf-name').textContent = name;
+  document.getElementById('cf-phone').textContent = phone;
+  document.getElementById('bk-form').style.display='none';
+  document.getElementById('bk-done').style.display='block';
+  document.getElementById('bk-done').scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('bk-again').addEventListener('click', function(){
+  document.getElementById('bk-done').style.display='none';
+  document.getElementById('bk-form').style.display='block';
+  sel.time=null;
+  timesEl.querySelectorAll('.chip').forEach(function(c){c.classList.remove('sel')});
+  document.getElementById('book').scrollIntoView({behavior:'smooth'});
+});
+</script>
+</body>
+</html>
